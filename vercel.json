@@ -1,13 +1,6 @@
 {
   "version": 2,
-  "env": {
-    "APP_ENV": "production",
-    "APP_DEBUG": "true",
-    "APP_KEY": "base64:MsEkgxyPG7AtVcT3plA/71HbylyWQpX6MNgeLMLqVys=",
-    "CACHE_DRIVER": "array",
-    "SESSION_DRIVER": "cookie",
-    "LOG_CHANNEL": "stderr"
-  },
+  "buildCommand": "composer install --no-dev --prefer-dist --optimize-autoloader",
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.6.0"
